@@ -21,8 +21,8 @@ sudo usermod -a -G tty pi
 
 sudo nano /etc/udev/rules.d/99-input.rules
  
-SUBSYSTEM=="input", GROUP="input", MODE="0660" >> /etc/udev/rules.d/99-input.rules
-KERNEL=="tty[0-9]*", GROUP="tty", MODE="0660" >>  /etc/udev/rules.d/99-input.rules
+echo SUBSYSTEM==\"input\", GROUP=\"input\", MODE=\"0660\" >> /etc/udev/rules.d/99-input.rules
+echo KERNEL==\"tty[0-9]*\", GROUP=\"tty\", MODE=\"0660\" >>  /etc/udev/rules.d/99-input.rules
 
 #Setup: GPU Ram
 #Advanced Options ->Memory Split -> 256

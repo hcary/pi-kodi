@@ -4,7 +4,6 @@
 
 sudo apt-get update
 sudo apt-cache madison kodi
-      kodi | 2:17.1-1~jessie | http://archive.raspberrypi.org/debian/ jessie/main armhf Packages
 
 # Update and install Kodi
 
